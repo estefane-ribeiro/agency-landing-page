@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-silver-100: #f5f7fa;
+  --color-grey-blue: #abbed1;
+  --color-lgrey: #89939e;
+  --color-grey: #717171;
+  --color-dgrey: #4d4d4d;
+  --color-dark: #263238;
+  --color-primary: #28cb8b;
+  --color-secondary: #263238;
+  --color-info: #2194f3;
+
+  --animate-lineIn: lineIn 0.3s ease-in-out forwards;
+
+  @keyframes lineIn {
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}
