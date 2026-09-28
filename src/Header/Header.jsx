@@ -43,7 +43,7 @@ const Header = () => {
           <li>
             <a
               href=""
-              className="py-2 px-4 bg-primary text-white rounded-md transition hover:contrast-150"
+              className="py-2 px-4 bg-primary text-white rounded-md transition hover:contrast-200"
             >
               Cadastro
             </a>
