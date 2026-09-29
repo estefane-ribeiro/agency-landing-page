@@ -37,7 +37,7 @@ const Footer = () => {
         <h3 className="text-2xl mb-6 text-white">Stay up to date</h3>
         <div className="flex relative">
           <input
-            className="bg-white/20 p-2 rounded-sm"
+            className="bg-white/20 w-full p-2 rounded-sm"
             type="email"
             placeholder="Your email address"
           />

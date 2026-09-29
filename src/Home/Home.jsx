@@ -16,6 +16,9 @@ import icon6 from "../img/Icon6.svg";
 import icon7 from "../img/Icon7.svg";
 import pana from "../img/pana.svg";
 import image from "../img/image.svg";
+import image2 from "../img/image2.png";
+import image3 from "../img/image3.png";
+import image4 from "../img/image4.png";
 
 const Home = () => {
   return (
@@ -31,16 +34,16 @@ const Home = () => {
           </p>
           <a
             href=""
-            className="bg-primary text-white py-3 px-8 inline-block rounded-sm transition hover:contrast-200 justify-self-center md:justify-self-start md:self-start"
+            className="bg-primary text-white py-3 px-8 inline-block rounded-sm transition hover:contrast-200 justify-self-center self-center md:justify-self-start md:self-start"
           >
             Register
           </a>
         </div>
-        <div>
+        <div className="mx-auto">
           <img src={ilustration} alt="Ilustração" />
         </div>
       </div>
-      <div className="flex flex-col items-center bg-white pt-10">
+      <div className="flex flex-col items-center bg-white pt-10 p-4">
         <h2 className="text-dgrey text-3xl font-semibold">Our Clients</h2>
         <p className="text-grey mt-2">
           We have been working with some Fortune 500+ clients
@@ -114,8 +117,8 @@ const Home = () => {
         </div>
       </div>
       <div className="mb-8 py-10 bg-white flex flex-col items-center justify-center md:flex-row">
-        <div className=" min-w-80 w-full shrink">
-          <img src={ilustration2} alt="ilustação" />
+        <div className=" min-w-80 w-full shrink ">
+          <img className="mx-auto" src={ilustration2} alt="ilustação" />
         </div>
         <div className="grid items-center justify-center gap-4 text-center">
           <h2 className="text-dgrey text-3xl font-semibold text-balance">
@@ -188,7 +191,7 @@ const Home = () => {
 
       <div className="flex flex-col items-center bg-white p-10 text-center gap-10 md:flex-row md:justify-around">
         <div className="min-w-80 w-full shrink">
-          <img src={pana} alt="ilustration" />
+          <img className="mx-auto" src={pana} alt="ilustration" />
         </div>
         <div>
           <h2 className="text-dgrey text-3xl font-semibold">
@@ -216,7 +219,7 @@ const Home = () => {
 
       <div className="flex flex-col items-center p-10 text-center gap-10 md:flex-row md:justify-center ">
         <div className="min-w-80 w-full shrink">
-          <img src={image} alt="ilustration" />
+          <img className="mx-auto" src={image} alt="ilustration" />
         </div>
         <div className="  items-start">
           <p className="text-grey mt-2 text-balance">
@@ -266,52 +269,65 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="grid gap-2 items-center justify-center text-center py-10 bg-white ">
+      <div className="grid gap-2 items-center justify-center text-center pt-10 pb-24 px-4 bg-white ">
         <h2 className="text-dgrey text-3xl font-semibold text-balance max-w-135.5 justify-self-center">
           Caring is the new marketing
         </h2>
-        <p className="text-grey">
+        <p className="text-grey mb-4 text-balance">
           The Nexcent blog is the best place to read about the latest membership
           insights, trends and more. See who's joining the community, read about
           how our community are increasing their membership income and lot's
-          more.​
+          more.
         </p>
-        <div className="flex flex-col lg:flex-row gap gap-10 justify-between ">
+        <div className="flex flex-col lg:flex-row gap gap-10 justify-between  *:max-lg:mb-25">
           <div className="grid items-center justify-center">
-            <div className="justify-self-center">
-              <img src={icon} alt="Ícone " />
+            <div className="justify-self-center relative">
+              <img src={image2} alt="ilustration " />
+              <div className="bg-white w-[70%] p-4 grid items-center justify-center absolute -bottom-12 left-12 rounded-lg shadow-2xl">
+                <p className="text-grey mb-4">
+                  Creating Streamlined Safeguarding Processes with OneRen
+                </p>
+                <a
+                  href=""
+                  className="text-primary font-semibold inline-block rounded-sm transition hover:contrast-200 justify-self-center text-lg"
+                >
+                  Readmore
+                </a>
+              </div>
             </div>
-            <h3 className="text-2xl text-dgrey font-semibold mt-4 mb-2">
-              Membership Organisations
-            </h3>
-            <p className="text-grey text-balance">
-              Our membership management software provides full automation of
-              membership renewals and payments
-            </p>
           </div>
           <div className="grid items-center justify-center">
-            <div className="justify-self-center">
-              <img src={icon3} alt="Ícone " />
+            <div className="justify-self-center relative">
+              <img src={image3} alt="ilustration " />
+              <div className="bg-white w-[70%] p-4 grid items-center justify-center absolute -bottom-12 left-12 rounded-lg shadow-2xl">
+                <p className="text-grey mb-4">
+                  What are your safeguarding responsibilities and how can you
+                  manage them?
+                </p>
+                <a
+                  href=""
+                  className="text-primary font-semibold inline-block rounded-sm transition hover:contrast-200 justify-self-center text-lg"
+                >
+                  Readmore
+                </a>
+              </div>
             </div>
-            <h3 className="text-2xl text-dgrey font-semibold mt-4 mb-2">
-              National Associations
-            </h3>
-            <p className="text-grey text-balance">
-              Our membership management software provides full automation of
-              membership renewals and payments
-            </p>
           </div>
-          <div className="grid items-center justify-center">
-            <div className="justify-self-center">
-              <img src={icon2} alt="Ícone " />
+          <div className="grid items-center justify-center ">
+            <div className="justify-self-center relative">
+              <img src={image4} alt="ilustration " />
+              <div className="bg-white w-[70%] p-4 grid items-center justify-center absolute -bottom-12 left-12 rounded-lg shadow-2xl">
+                <p className="text-grey mb-4">
+                  Creating Streamlined Safeguarding Processes with OneRen
+                </p>
+                <a
+                  href=""
+                  className="text-primary font-semibold inline-block rounded-sm transition hover:contrast-200 justify-self-center text-lg"
+                >
+                  Readmore
+                </a>
+              </div>
             </div>
-            <h3 className="text-2xl text-dgrey font-semibold mt-4 mb-2">
-              Clubs And Groups
-            </h3>
-            <p className="text-grey text-balance">
-              Our membership management software provides full automation of
-              membership renewals and payments
-            </p>
           </div>
         </div>
       </div>
