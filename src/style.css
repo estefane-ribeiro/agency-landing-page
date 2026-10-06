@@ -11,12 +11,38 @@
   --color-secondary: #263238;
   --color-info: #2194f3;
 
-  --animate-lineIn: lineIn 0.3s ease-in-out forwards;
+  --animate-leftIn: leftIn 0.5s ease forwards;
+  --animate-rightIn: rightIn 0.5s ease forwards;
+  --animate-rolarTexto: rolarTexto 20s linear infinite;
 
-  @keyframes lineIn {
+  @keyframes leftIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
     100% {
       opacity: 1;
-      width: 100%;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rightIn {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rolarTexto {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
     }
   }
 }
