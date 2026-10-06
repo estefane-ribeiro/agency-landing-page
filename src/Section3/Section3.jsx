@@ -3,9 +3,33 @@ import icon5 from "../img/Icon5.svg";
 import icon6 from "../img/Icon6.svg";
 import icon7 from "../img/Icon7.svg";
 import useScrollAnimation from "../Hooks/useScrollAnimation";
+import { useEffect, useState } from "react";
+
+const numeros = [2245341, 828867, 46328, 1926436];
 
 const Section3 = () => {
   const { ref, isVisible } = useScrollAnimation();
+  const [animaNumero, setAnimaNumero] = useState([0, 0, 0, 0]);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    const interval = setInterval(() => {
+      setAnimaNumero((anterior) => {
+        return anterior.map((numero, i) => {
+          const novoNumero = numero + 10000;
+
+          if (novoNumero >= numeros[i]) {
+            return numeros[i];
+          }
+
+          return novoNumero;
+        });
+      });
+    }, 10);
+
+    return () => clearInterval(interval);
+  }, [isVisible]);
 
   return (
     <section
@@ -26,14 +50,14 @@ const Section3 = () => {
           <li>
             <img className="mr-3" src={icon4} alt="icone" />
             <div className="text-dgrey font-semibold text-2xl">
-              2,245,341
+              {animaNumero[0]}
               <span className="text-sm *:font-normal text-grey">Members</span>
             </div>
           </li>
           <li>
             <img className="mr-3" src={icon5} alt="icone" />
             <div className="text-dgrey font-semibold text-2xl">
-              828,867
+              {animaNumero[1]}
               <span className="text-sm *:font-normal text-grey">
                 Event Bookings
               </span>
@@ -42,14 +66,14 @@ const Section3 = () => {
           <li>
             <img className="mr-3" src={icon6} alt="icone" />
             <div className="text-dgrey font-semibold text-2xl">
-              46,328
+              {animaNumero[2]}
               <span className="text-sm *:font-normal text-grey">Clubs</span>
             </div>
           </li>
           <li>
             <img className="mr-3" src={icon7} alt="icone" />
             <div className="text-dgrey font-semibold text-2xl">
-              1,926,436
+              {animaNumero[3]}
               <span className="text-sm *:font-normal text-grey">Payments</span>
             </div>
           </li>
