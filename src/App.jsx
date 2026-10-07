@@ -7,7 +7,7 @@ import Footer from "./Footer/Footer";
 const App = () => {
   return (
     <div className="mx-auto  ">
-      <BrowserRouter>
+      <BrowserRouter basename="/agency-landing-page">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
