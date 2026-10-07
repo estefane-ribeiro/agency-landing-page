@@ -26,7 +26,8 @@ const OurClients = () => {
         ref={ul}
         onMouseEnter={() => setAtivo(false)}
         onMouseLeave={() => setAtivo(true)}
-        className={`flex justify-between items-center gap-24 my-4 whitespace-nowrap  *:inline-block animate-rolarTexto`}
+        className={`flex justify-between min-[80%]: items-center gap-24 my-4 whitespace-nowrap  *:inline-block animate-rolarTexto flex-nowrap shrink *:shrink *:size-15
+`}
         style={{
           animationPlayState: ativo ? "running" : "paused",
         }}
