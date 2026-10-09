@@ -4,7 +4,7 @@ Landing page desenvolvida para uma agência digital, com foco em apresentar seus
 
 ## ✨ Preview
 
-💡 Demo: <a href"https://estefane-ribeiro.github.io/agency-landing-page/">Acesse o projeto online</a>
+💡 Demo: <a href="https://estefane-ribeiro.github.io/agency-landing-page/">Acesse o projeto online</a>
 
 ## 🛠️ Tecnologias
 
