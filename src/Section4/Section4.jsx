@@ -7,7 +7,7 @@ const Section4 = () => {
   return (
     <section
       ref={ref}
-      className={`flex flex-col items-center bg-white p-10 text-center gap-10 md:flex-row md:justify-around transition ${isVisible ? "animate-rightIn" : ""}`}
+      className={`flex flex-col items-center p-4 bg-white p-10 text-center gap-10 md:flex-row md:justify-around transition ${isVisible ? "animate-rightIn" : ""}`}
     >
       <div className="min-w-80 w-full shrink">
         <img className="mx-auto" src={pana} alt="ilustration" />

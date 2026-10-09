@@ -7,7 +7,7 @@ const Section8 = () => {
   return (
     <div
       ref={ref}
-      className={`mb-8 py-10 bg-white flex flex-col items-center justify-center md:flex-row transition ${isVisible ? "animate-rightIn" : ""}`}
+      className={`mb-8 py-10 bg-white p-4 flex flex-col items-center justify-center md:flex-row transition ${isVisible ? "animate-rightIn" : ""}`}
     >
       <div className=" min-w-80 w-full shrink ">
         <img className="mx-auto" src={ilustration2} alt="ilustação" />

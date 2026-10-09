@@ -1,6 +1,5 @@
 import ilustration from "../img/Illustration.svg";
 import Section from "../Section/Section";
-import useScrollAnimation from "../Hooks/useScrollAnimation";
 import Section3 from "../Section3/Section3";
 import Section4 from "../Section4/Section4";
 import Section5 from "../Section5/Section5";
@@ -11,8 +10,6 @@ import Section8 from "../Section8/Section8";
 import Slide from "../Slide/Slide";
 
 const Home = () => {
-  const { ref, isVisible } = useScrollAnimation();
-
   return (
     <div>
       {/* <div

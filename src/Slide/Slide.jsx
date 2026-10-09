@@ -71,7 +71,10 @@ const Slide = () => {
   }, [slideItem]);
 
   return (
-    <div ref={ref} className={`py-18 ${isVisible ? "animate-leftIn" : ""}`}>
+    <div
+      ref={ref}
+      className={`lg:py-18 pb-8  ${isVisible ? "animate-leftIn" : ""}`}
+    >
       <div
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
@@ -88,16 +91,16 @@ const Slide = () => {
         >
           {/* SLIDE 1 */}
           <section className="min-w-screen  grid gap-8 justify-center items-center lg:grid-cols-[1fr_1fr] lg:grid-rows-1 md:px-10">
-            <div className="w-100 mx-auto lg:order-2">
+            <div className="md:w-100 w-[70%] mx-auto lg:order-2">
               <img src={ilustration} alt="Ilustração" />
             </div>
             <div className="flex flex-col max-sm:gap-6 justify-center items-center md:gap-0 max-lg:text-center 2xl:justify-self-end">
-              <h1 className="text-dgrey text-4xl font-bold tracking-wide md:text-5xl lg:self-start md:text-balance">
+              <h1 className="text-dgrey max-sm:w-[90%] text-3xl font-bold tracking-wide md:text-5xl lg:self-start md:text-balance">
                 Lessons and insights{" "}
                 <span className="text-primary">from 8 years</span>
               </h1>
 
-              <p className="text-grey md:text-balance md:mt-4 md:mb-8 lg:self-start">
+              <p className="text-grey md:text-balance md:mt-4 md:mb-8 lg:self-start max-sm:w-[80%]">
                 Where to grow your business as a photographer: site or social
                 media?
               </p>
@@ -113,16 +116,16 @@ const Slide = () => {
 
           {/* SLIDE 2 */}
           <section className="min-w-screen  grid gap-8 justify-center items-center lg:grid-cols-[1fr_1fr] md:px-10">
-            <div className="w-100 mx-auto flex justify-center ">
+            <div className="md:w-100 w-[70%] mx-auto flex justify-center ">
               <img src={ilustration2} alt="Ilustração" />
             </div>
             <div className="flex flex-col max-sm:gap-6 justify-center items-center md:gap-0 max-lg:text-center">
-              <h1 className=" text-dgrey text-4xl font-bold tracking-wide md:text-5xl lg:self-start md:text-balance">
+              <h1 className=" text-dgrey max-sm:w-[80%] text-3xl font-bold tracking-wide md:text-5xl lg:self-start md:text-balance">
                 Transform your ideas into{" "}
                 <span className="text-primary">digital experiences.</span>
               </h1>
 
-              <p className="text-grey md:text-balance md:mt-4 md:mb-8 lg:self-start">
+              <p className="text-grey md:text-balance md:mt-4 md:mb-8 lg:self-start max-sm:w-[90%]">
                 We create modern, fast, and responsive websites to take your
                 digital presence to the next level.
               </p>
@@ -138,17 +141,17 @@ const Slide = () => {
 
           {/* SLIDE 3 */}
           <section className="min-w-screen  grid gap-8 justify-center items-center lg:grid-cols-[1fr_1fr] md:px-10">
-            <div className="w-100 mx-auto flex justify-center lg:order-2">
+            <div className="md:w-100 w-[70%] mx-auto flex justify-center lg:order-2">
               <img src={ilustration3} alt="Ilustração" />
             </div>
 
             <div className="flex flex-col max-sm:gap-6 justify-center items-center md:gap-0 max-lg:text-center 2xl:justify-self-end">
-              <h1 className="text-dgrey text-4xl font-bold tracking-wide  md:text-5xl lg:self-start md:text-balance">
+              <h1 className="text-dgrey max-sm:w-[80%] text-3xl font-bold tracking-wide  md:text-5xl lg:self-start md:text-balance">
                 Your website, fast on any{" "}
                 <span className="text-primary">device.</span>
               </h1>
 
-              <p className="text-grey md:text-balance md:mt-4 md:mb-8 lg:self-start">
+              <p className="text-grey md:text-balance md:mt-4 md:mb-8 lg:self-start max-sm:w-[90%]">
                 Performance, responsiveness and best practices to offer an
                 incredible experience on any screen.
               </p>
@@ -164,24 +167,24 @@ const Slide = () => {
         </div>
       </div>
 
-      <nav className="flex gap-2 justify-center items-center *:hover:contrast-200">
+      <nav className="flex gap-2 justify-center items-center mt-4 *:hover:contrast-200">
         <button
           onClick={slide1}
-          className={`size-4 rounded-full ${
+          className={`size-3 rounded-full ${
             slideItem === 0 ? "bg-primary" : "bg-gray-300"
           }`}
         />
 
         <button
           onClick={slide2}
-          className={`size-4 rounded-full ${
+          className={`size-3 rounded-full ${
             slideItem === 1 ? "bg-primary" : "bg-gray-300"
           }`}
         />
 
         <button
           onClick={slide3}
-          className={`size-4 rounded-full ${
+          className={`size-3 rounded-full ${
             slideItem === 2 ? "bg-primary" : "bg-gray-300"
           }`}
         />

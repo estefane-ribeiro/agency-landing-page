@@ -8,7 +8,7 @@ const Section2 = () => {
   return (
     <section
       ref={ref}
-      className={`grid gap-2 items-center justify-center text-center py-10 bg-white transition ${isVisible ? "animate-rightIn" : ""}`}
+      className={`grid gap-2 p-4 items-center justify-center text-center py-10 bg-white transition ${isVisible ? "animate-rightIn" : ""}`}
     >
       <h2 className="text-dgrey text-3xl font-semibold text-balance max-w-135.5 justify-self-center">
         Manage your entire community in a single system

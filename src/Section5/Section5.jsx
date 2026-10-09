@@ -14,13 +14,13 @@ const Section5 = () => {
   return (
     <section
       ref={ref}
-      className={`flex flex-col items-center p-10 text-center gap-10 md:flex-row md:justify-center transition ${isVisible ? "animate-leftIn" : ""}`}
+      className={`flex flex-col  items-center p-10 text-center gap-10 md:flex-row md:justify-center transition ${isVisible ? "animate-leftIn" : ""}`}
     >
       <div className="min-w-80 w-full shrink">
         <img className="mx-auto" src={image} alt="ilustration" />
       </div>
       <div className="  items-start">
-        <p className="text-grey mt-2 text-balance">
+        <p className="text-grey mt-2 text-balance p-4">
           Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis
           sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus.
           Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut
@@ -36,34 +36,34 @@ const Section5 = () => {
         <p className="text-grey mt-2 text-balance">
           British Dragon Boat Racing Association
         </p>
-        <ul className="flex items-center justify-center gap-8 *:**:shrink *:**:min-w-10 max-sm:gap-3">
-          <li>
-            <img src={cliente} alt="cliente" />
-          </li>
-          <li>
-            <img src={cliente2} alt="cliente" />
-          </li>
-          <li>
-            <img src={cliente3} alt="cliente" />
-          </li>
-          <li>
-            <img src={cliente4} alt="cliente" />
-          </li>
-          <li>
-            <img src={cliente5} alt="cliente" />
-          </li>
-          <li>
-            <img src={cliente6} alt="cliente" />
-          </li>
-          <li>
-            <a
-              className="text-primary font-semibold inline-block rounded-sm transition hover:contrast-200 justify-self-center "
-              href=""
-            >
-              Meet all customers{" "}
-            </a>
-          </li>
-        </ul>
+        <div className="flex max-sm:flex-col max-sm:gap-4">
+          <ul className="flex items-center justify-center gap-8 *:**:shrink *:**:min-w-10 max-sm:gap-3">
+            <li>
+              <img src={cliente} alt="cliente" />
+            </li>
+            <li>
+              <img src={cliente2} alt="cliente" />
+            </li>
+            <li>
+              <img src={cliente3} alt="cliente" />
+            </li>
+            <li>
+              <img src={cliente4} alt="cliente" />
+            </li>
+            <li>
+              <img src={cliente5} alt="cliente" />
+            </li>
+            <li>
+              <img src={cliente6} alt="cliente" />
+            </li>
+          </ul>
+          <a
+            className="text-primary font-semibold inline-block rounded-sm transition hover:contrast-200 justify-self-center "
+            href=""
+          >
+            Meet all customers{" "}
+          </a>
+        </div>
       </div>
     </section>
   );
