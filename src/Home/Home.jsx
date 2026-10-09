@@ -8,13 +8,14 @@ import Section6 from "../Section6/Section6";
 import Section7 from "../Section7/Section7";
 import Section2 from "../Section2/Section2";
 import Section8 from "../Section8/Section8";
+import Slide from "../Slide/Slide";
 
 const Home = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
     <div>
-      <div
+      {/* <div
         ref={ref}
         className={`container mx-auto flex flex-col-reverse p-4 gap-10 my-24 md:flex-row md:justify-between animate-lineIn transition duration-300 ${isVisible ? "animate-leftIn" : ""}`}
       >
@@ -36,7 +37,8 @@ const Home = () => {
         <div className="mx-auto">
           <img src={ilustration} alt="Ilustração" />
         </div>
-      </div>
+      </div> */}
+      <Slide />
       <Section />
       <Section2 />
       <Section8 />
