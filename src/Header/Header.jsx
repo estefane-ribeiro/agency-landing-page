@@ -44,8 +44,8 @@ const Header = () => {
             style={{ clipPath: "polygon(0% 0%, 100% 0%, 50% 100%)" }}
             className="h-3 w-3 absolute -top-3 right-4 bg-primary max-md:block hidden"
           ></span>
-          <nav>
-            <ul className="flex gap-12 max-md:flex-col max-md:items-center max-md:gap-5 max-md:text-white *:**:hover:max-md:text-secondary">
+          <nav className="md:mr-5">
+            <ul className="flex gap-12 max-md:flex-col max-md:items-center max-md:gap-5 max-md:text-white  *:**:hover:max-md:text-secondary">
               <li>
                 <a href="\" className="hover:text-primary inline-block group">
                   Home
@@ -73,7 +73,7 @@ const Header = () => {
             </ul>
           </nav>
           <nav>
-            <ul className="flex gap-3 max-md:flex-col max-md:items-center *:**:hover:max-md:text-secondary *:**:hover:max-md:duration-300">
+            <ul className="flex gap-5 max-md:flex-col max-md:items-center *:**:hover:max-md:text-secondary *:**:hover:max-md:duration-300">
               <li>
                 <a
                   href=""
