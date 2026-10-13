@@ -11,9 +11,21 @@
   --color-secondary: #263238;
   --color-info: #2194f3;
 
+  --animate-topIn: topIn 0.8s ease forwards;
   --animate-leftIn: leftIn 0.5s ease forwards;
   --animate-rightIn: rightIn 0.5s ease forwards;
   --animate-rolarTexto: rolarTexto 20s linear infinite;
+
+  @keyframes topIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   @keyframes leftIn {
     0% {
